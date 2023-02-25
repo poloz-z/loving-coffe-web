@@ -1,2 +1,2 @@
 # loving-coffe-web
-Sitio web de Amando el cafe cada dia (En desarrollo 
+Sitio web de Amando el cafe cada dia (En desarrollo)
