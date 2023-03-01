@@ -64,7 +64,8 @@ def main(page: flet.Page):
         page.update()
 
     def registro_c(e):
-        if nombre.current.value == "" or correo.current.value == "" or passwo.current.value == "":
+       # if nombre.current.value == "" or correo.current.value == "" or passwo.current.value == "":
+       if data.user_auth(usuario.current.value, passw.current.value): 
           nombre.current.error_text = "Ingrese el nombre de usuario" 
           correo.current.error_text = "Ingrese el correo"
           passwo.current.error_text = "Ingrese su clave"
