@@ -32,8 +32,8 @@ def main(page: flet.Page):
             passw.current.error_text = "Ingrese una contraseña"
             page.update()
         else:
-            data = DataBase()
-            if data.user_query(usuario.current.value) == usuario.current.value and data.pass_query(passw.current.value) == passw.current.value: 
+            data = DataBase() 
+            if data.user_auth(usuario.current.value, passw.current.value): 
                 login.open = False
                 page.update()
             else:
